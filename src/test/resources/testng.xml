@@ -1,0 +1,72 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="eWM test cases" configfailurepolicy="continue" parallel="tests" thread-count="3"><!---->
+    <listeners>
+        <listener class-name="com.uscold.LabelSetup.conf.ScreenShootsListener" />
+        <listener class-name="com.uscold.LabelSetup.conf.CustomHTMLReportListener" />
+    </listeners>
+    <test name="label">
+        <classes>
+            <class name="com.uscold.LabelSetup.test.label.LabelMapping"/>
+        </classes>
+    </test>
+    <!--<test preserve-order="true" name="create and confirm receipt">-->
+        <!--<classes>-->
+            <!--<class name="com.uscold.LabelSetup.test.receipt.CreateReceiptTest"/>-->
+            <!--<class name="com.uscold.LabelSetup.test.receipt.CreateNewAppointment"/>-->
+            <!--<class name="com.uscold.LabelSetup.test.receipt.ReceivingTestRF"/>-->
+            <!--<class name="com.uscold.LabelSetup.test.receipt.ConfirmLotTest"/>-->
+            <!--<class name="com.uscold.LabelSetup.test.ViewAllReceipts"/>-->
+        <!--</classes>-->
+    <!--</test>-->
+    <!--<test name="create barcode">-->
+        <!--<classes>-->
+            <!--<class name="com.uscold.LabelSetup.test.barcode.AssingAndViewBarcodeTest"/>-->
+        <!--</classes>-->
+    <!--</test>-->
+    <!--<test name="create customer">-->
+        <!--<classes>-->
+            <!--&lt;!&ndash;<class name="com.uscold.LabelSetup.test.customers.ViewExistingCustomersPageTest"/>&ndash;&gt;-->
+            <!--<class name="com.uscold.LabelSetup.test.customer.CreateNewCustomerTest"/>-->
+        <!--</classes>-->
+    <!--</test>-->
+    <!--<test name="create product">-->
+        <!--<classes>-->
+            <!--<class name="com.uscold.LabelSetup.test.product.CreateAndViewCreatedProductTest"/>-->
+            <!--<class name="com.uscold.LabelSetup.test.product.UpdateAndViewCreatedProductTest"/>-->
+        <!--</classes>-->
+    <!--</test>-->
+    <!--<test name="create location flow">-->
+        <!--<classes>-->
+            <!--<class name="com.uscold.LabelSetup.test.location.CreateRoomAisleAndRack"/>-->
+            <!--<class name="com.uscold.LabelSetup.test.location.LocationCRUDTest"/>-->
+        <!--</classes>-->
+    <!--</test>-->
+    <!--<test name="order maintenance">-->
+        <!--<classes>-->
+            <!--<class name="com.uscold.LabelSetup.test.orders.CreateNewOrder"/>-->
+            <!--<class name="com.uscold.LabelSetup.test.orders.ShipOrderInquiryTest"/>-->
+            <!--<class name="com.uscold.LabelSetup.test.orders.ViewExistingOrderPage"/>-->
+            <!--<class name="com.uscold.LabelSetup.test.orders.OrdersSearchTest"/>-->
+        <!--</classes>-->
+    <!--</test>-->
+    <!--<test name="CreateUser">-->
+        <!--<classes>-->
+            <!--<class name="com.uscold.LabelSetup.test.user.CreateUserTest"/>-->
+        <!--</classes>-->
+    <!--</test>-->
+    <!--<test name="Inventory search by some criteria">-->
+        <!--<classes>-->
+            <!--<class name="com.uscold.LabelSetup.test.inventory.InventorySearchTest"/>-->
+        <!--</classes>-->
+    <!--</test>-->
+    <!--<test name="Driver Maintenance">-->
+        <!--<classes>-->
+            <!--<class name="com.uscold.LabelSetup.test.driver.DriverMaintenanceSearchTests"/>-->
+        <!--</classes>-->
+    <!--</test>-->
+    <!--<test name="load zone map">-->
+        <!--<classes>-->
+            <!--<class name="com.uscold.LabelSetup.test.CheckZoneMapForFortNorthTest"/>-->
+        <!--</classes>-->
+    <!--</test>-->
+</suite>
